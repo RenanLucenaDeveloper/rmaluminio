@@ -1,0 +1,105 @@
+#servicos, #mais-produtos {
+  text-align: center;
+  display: block;
+  margin: 2.5rem calc((100vw - 300px) / 2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    padding-bottom: 1.875rem;
+  }
+}
+
+#servicos::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 3px;
+  background-color: #D9D9D9;
+
+  margin-top: 2.5rem;
+}
+
+.instagram-produtos {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  color: #000;
+  
+  padding: 1rem 0;
+
+  p {
+    color: #000 !important;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+
+.ver-mais {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  font-size: 0.875rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+
+	padding: 0.75rem 1.125rem;
+	background-color: #0E0E0E;
+	color: #FFFFFF;
+
+	text-decoration: none;
+
+	transition: .2s;
+
+  border-radius: 3px;
+
+	&:hover {
+		background-color: #000B23;
+		text-decoration: none;
+	}
+}
+
+.scroll-container {
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+
+  display: flex;
+  flex-direction: row;
+  gap: 1.875rem;
+  flex-wrap: nowrap;
+
+  padding: 0 calc((100vw - 300px) / 2) 10px;
+
+  width: 100vw;
+  min-width: 100vw;
+
+  overflow-x: scroll;
+
+  div {
+    display: block;
+
+    border-radius: 5px;
+    border: 3px solid #000B23;
+    padding: 0;
+
+
+
+    img {
+      display: block;
+      margin: 0;
+      padding: 0;
+
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
