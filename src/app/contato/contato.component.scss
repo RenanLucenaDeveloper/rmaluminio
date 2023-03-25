@@ -70,3 +70,30 @@
 .mapa-link {
   border-radius: 5px;
 }
+
+// Versão de computador
+
+@media screen and (min-width: 1000px) {
+  #contato {
+    padding: 5rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: space-between;
+
+    .lembrete {
+      width: 400px;
+      padding: 1rem;
+      line-height: 1.2rem;
+    }
+  }
+
+  #info {
+    padding-top: 2rem;
+  }
+
+  .mapa-link {
+    border-radius: 5px;
+    transform: translateY(-20rem);
+  }
+}

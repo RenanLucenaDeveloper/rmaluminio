@@ -2,16 +2,16 @@
   <p>(11) 97616-7656</p>
 </section>
 <header>
-  <a href="/"><img src="./assets/logo.svg" alt="Logo do RMAluminio"></a>
+  <a href="/" class="logo"><img src="./assets/logo.svg" alt="Logo do RMAluminio"></a>
 
   <nav>
-    <button id="menu-mobile">MENU <div id="mobile-icon"></div></button>
+    <button id="menu-mobile" [ariaExpanded]="expanded ? 'true' : 'false'" aria-controls="menu" (click)="ToggleExpanded()">MENU <div id="mobile-icon" [ariaHidden]="expanded ? 'false' : 'true'" focusable="false"></div></button>
 
-    <ul>
-      <li><a href="#servicos" class="header-button">Serviços</a></li>
-      <li><a href="#sobre" class="header-button">Sobre</a></li>
-      <li><a href="#contato" class="header-button last">Contato</a></li>
-      <li><a href="#contato" class="orcamento laranja">ORÇAMENTO</a></li>
+    <ul id="menu" [ariaHidden]="expanded ? 'false' : 'true'" aria-labelledby="menu-mobile" [class]="expanded ? 'active' : 'hidden'">
+      <li><a href="#servicos" class="header-button" (click)="ToggleExpanded()">Serviços</a></li>
+      <li><a href="#sobre" class="header-button" (click)="ToggleExpanded()">Sobre</a></li>
+      <li><a href="#contato" class="header-button last" (click)="ToggleExpanded()">Contato</a></li>
+      <li><a href="#contato" class="orcamento laranja" (click)="ToggleExpanded()">ORÇAMENTO</a></li>
     </ul>
   </nav>
 </header>

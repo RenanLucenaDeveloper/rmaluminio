@@ -10,3 +10,14 @@ footer {
     margin-bottom: .75rem;
   }
 }
+
+//Versão de computador
+@media screen and (min-width: 1000px) {
+  footer {
+    padding: 2.5rem calc((100vw - 300px) / 2);
+  
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

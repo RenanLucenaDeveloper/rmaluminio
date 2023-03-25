@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  expanded:boolean;
 
+  constructor() {
+    this.expanded = false;
+  }
+
+  ToggleExpanded() {
+    this.expanded = !this.expanded;
+  }
 }
